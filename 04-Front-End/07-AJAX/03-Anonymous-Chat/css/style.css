@@ -1,0 +1,21 @@
+body {
+  background: #6441A5; /* Twitch purple */
+  color: #FFFFFF; /* White text on purple background */
+  padding-top: 50px;
+}
+
+#chatroom {
+  padding: 30px;
+  border: 1px solid #9147FF; /* Slightly lighter purple border */
+  background: #9147FF; /* Slightly lighter purple background */
+}
+
+.date {
+  color: #B1A7FF; /* Light purple for date */
+}
+
+#messages {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid #9147FF; /* Slightly lighter purple border for message section */
+}
