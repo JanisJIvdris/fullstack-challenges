@@ -1,0 +1,96 @@
+@import url("components/cards.css");
+@import url('https://fonts.googleapis.com/css?family=Fira+Mono:400');
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-family: Open-sans, sans-serif;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  font-family: 'Fira Mono', monospace;
+
+}
+h1, h2, h3 {
+  font-family: Raleway, Helvetica, sans-serif;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+p {
+  margin-bottom: 40px;
+}
+a {
+  text-decoration: none;
+}
+span {
+  color: #999999;
+  font-size: 20px;
+  font-weight: lighter;
+}
+.text-center {
+  text-align: center;
+}
+
+.container {
+  width: 500px;
+  margin: 0 auto;
+}
+div{
+  animation: glitch 1s linear infinite;
+}
+
+@keyframes glitch{
+  2%,64%{
+    transform: translate(2px,0) skew(0deg);
+  }
+  4%,60%{
+    transform: translate(-2px,0) skew(0deg);
+  }
+  62%{
+    transform: translate(0,0) skew(5deg);
+  }
+}
+
+div:before,
+div:after{
+  content: attr(title);
+  position: absolute;
+  left: 0;
+}
+
+div:before{
+  animation: glitchTop 1s linear infinite;
+  clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+}
+
+@keyframes glitchTop{
+  2%,64%{
+    transform: translate(2px,-2px);
+  }
+  4%,60%{
+    transform: translate(-2px,2px);
+  }
+  62%{
+    transform: translate(13px,-1px) skew(-13deg);
+  }
+}
+
+div:after{
+  animation: glitchBotom 1.5s linear infinite;
+  clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+  -webkit-clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+}
+
+@keyframes glitchBotom{
+  2%,64%{
+    transform: translate(-2px,0);
+  }
+  4%,60%{
+    transform: translate(-2px,0);
+  }
+  62%{
+    transform: translate(-22px,5px) skew(21deg);
+  }
+}

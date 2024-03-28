@@ -1,0 +1,38 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@700');
+
+
+/* Fontawesome */
+@import url('https://use.fontawesome.com/releases/v6.1.2/css/all.css');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Sixtyfour&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Nosifer&family=Sixtyfour&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bangers&family=Nosifer&family=Sixtyfour&display=swap');
+
+/* Fontawesome */
+@import url('https://use.fontawesome.com/releases/v6.1.2/css/all.css');
+/* Custom design below! */
+@import url(components/banner.css);
+@import url(components/buttons.css);
+@import url(components/cards.css);
+@import url(components/container.css);
+@import url(components/footer.css);
+/* Utilities */
+body {
+  margin: 0;
+
+  background-color: #F8A1D8;
+
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Bangers', system-ui;
+  letter-spacing: 1px;
+}
+
+h3 {
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}

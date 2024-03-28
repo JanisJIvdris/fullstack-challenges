@@ -1,0 +1,17 @@
+.banner {
+  background-size: cover;
+  background-position: center;
+  padding: 200px 0;
+}
+
+.banner h1 {
+  color: black;
+  text-align-last: left;
+  font-size: 80px;
+}
+
+.banner p {
+  color: black;
+  text-align-last: left;
+  font-size: 30px;
+}
